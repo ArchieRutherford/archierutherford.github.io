@@ -1,29 +1,77 @@
 body {
-    background-color: rgb(43, 42, 42);
-}
-
-.no-margin {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.heading {
-    align-content: center;
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin: 25px;
-    color: azure;
-}
-
-.para {
-    color: azure;
-}
-
-.para-con {
+    background: url("bg.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    color: white;
     margin: 0;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding: 0;
+    font-family: "Inria Serif", serif;
 }
 
-.game-button {
+header {
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.countdown {
+    font-size: 24px;
+    margin: 20px 0;
+    height: calc(100vh - 100px);
+}
+
+#timer span {
+    display: inline-block;
+    width: 10vw;
+    font-size: 4vw;
+    padding: 10px;
+}
+
+#timer-titles span {
+    display: inline-block;
+    width: 10vw;
+    font-size: 2vw;
+    padding: 10px;
+}
+
+.location,
+.date {
+    background: rgba(255, 255, 255, 0.01); /* Light transparent background */
+    backdrop-filter: blur(2px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    padding: 20px;
+}
+
+.gallery img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.white-line {
+    border: none;
+    height: 1px;
+    background-color: white;
+    width: 90%; /* Adjust width as needed */
+    margin: 10px auto; /* Center the line */
+}
+
+.heading-subsection {
+    font-size: 20px;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between; /* Spreads elements evenly */
+    width: 100%; /* Ensure it takes full width */
     text-align: center;
+    align-items: center;
+}
+
+.heading-center {
+    flex-grow: 1; /* Allows the center span to take up remaining space */
+    text-align: center;
+    font-size: 64px;
 }
